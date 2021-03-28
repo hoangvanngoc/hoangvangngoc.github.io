@@ -1,8 +1,6 @@
-/* Mobile and Tablet*/
+/* =============Mobile and Tablet===========*/
 @media (max-width: 1023px){
-.hide-header-top{
-    display: none;
-}
+
 // banner
 .banner{
     .banner-2__wrap {
@@ -40,7 +38,6 @@
     .slider-btn{
         background-color: transparent;
     }
-
 }
  //footer
  .info-content{
@@ -165,16 +162,20 @@
 .pd-bt-40px{
     padding-bottom: 40px;
 }
-
-
 }
-/* Mobile */
+
+/*=========== Mobile ==========*/
 @media (max-width: 740px){
-    #news-slide,
-    .row{
-        margin-left: 0;
-        margin-right: 0;
-    }
+#news-slide,
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hide-header-top{
+    display: none;
+}
+
 .mobile-no-padding{
     padding: 0;
 }
@@ -243,11 +244,16 @@
                 border-bottom-left-radius: 20px;
                 background-color: rgb(36, 199, 240);
             }
-            i{
-                font-size: 1.6rem;
-                padding: 20px;
-                border-radius: 50%;
-                background-color: #ffeb3b;
+            .mobile-search__form-btn{
+                outline: none;
+                border: none;
+                background: transparent;
+                i{
+                    font-size: 1.6rem;
+                    padding: 20px;
+                    border-radius: 50%;
+                    background-color: #ffeb3b;
+                }
             }
         }
     }
@@ -278,9 +284,7 @@
     right: 20px;
     font-size: 2rem;
     color: #fff;
-    // .mobile-menu__wrap-lb{
-        
-    // }
+    
     ._transform-mobile-menu{
         transform: translateX(250px);
         -webkit-transform: translateX(250px);
@@ -354,10 +358,12 @@
 .slider{
     height: auto;
     img{
-        height: 320px;
+        height: 210px;
+        object-fit: initial;
     }
     .slider-text{
         left: 40px;
+        top: 10%;
         
         .slider-text__heading{
             font-size: 2rem;
@@ -365,6 +371,9 @@
         }
         .slider-text__sometext{
             font-size: 1.4rem;
+        }
+        .slider-text__btn{
+            margin-top: 20px;
         }
     } 
 }
@@ -478,7 +487,6 @@
                 margin-bottom: 40px;
             }
         }
-
     } 
 } 
 
@@ -535,7 +543,7 @@
 
 }
 
-/// PC breakpoint
+//  PC low resolution >
 @media (min-width: 1024px){
     .mobile-search{
         display: none;
@@ -548,8 +556,13 @@
     }
 }
 
-/* > PC low resolution */
+/*============== > PC low resolution ==============*/
 @media (min-width: 1024px) and (max-width: 1245px) {
+ // header top PC low resolution
+ .country{
+    //  display: flex;
+ } 
+
     .header-bottom {
         .menu-list {
             .menu-item{             
