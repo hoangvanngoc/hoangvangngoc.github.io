@@ -226,6 +226,7 @@
         background-color: rgba(118, 121, 122, 0.8);
         transition: background-color ease .4s;
         display: none;
+    }
         .mobile-search__form-wrap{
             display: flex;
             align-items: center;
@@ -237,6 +238,8 @@
             height: 60px;
             background-color: rgb(36, 199, 240);
             border-radius: 50px;
+            display: none;
+            z-index: 1000;
             ::placeholder{
                 color: #fff;
             }
@@ -263,8 +266,11 @@
                 }
             }
         }
+
+    #checkbox-search:checked ~ .mobile-search__form-wrap{
+        display: flex;
     }
-    #checkbox-search:checked ~ .mobile-search__form{
+    #checkbox-search:checked ~  .mobile-search__form{
         display: block;
     }
 }
