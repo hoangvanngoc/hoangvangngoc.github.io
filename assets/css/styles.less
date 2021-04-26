@@ -795,7 +795,7 @@ body {
 // slider-btn
 .slider__next-page{
     position: absolute;
-    top: 80%;
+    top: 85%;
     .transform-y (-70%);
     height: 60px;
     width: 100%;
@@ -935,6 +935,10 @@ body {
     bottom: 38px;
     display: inline-block;
     text-align: center;
+    a{
+        text-decoration: none;
+        color: @text-heading-color;
+    }
     .count-content__heading{
         font-size: 3rem;
         text-transform: uppercase;
@@ -978,6 +982,7 @@ body {
 //
 .banner-top__content{
     .content__percent{
+        text-decoration: none;
         font-size: 6rem;
         font-weight: 600;
         color: @primary-color;
@@ -1113,8 +1118,9 @@ body {
             overflow: hidden;
             outline: none;
             .text-two-line; 
+            .transition;
             &:hover{
-                color: #d926e9;
+                color: #0ca8c9;
             }
         }
         .product-price{
@@ -1182,8 +1188,11 @@ body {
             height: auto;
             text-align: left;
             margin: auto;
-    
+            .transition;
             .news-name{
+                &:hover{
+                    color:#0ca8c9;
+                }
                 display: block;
                 margin-top: 26px;
                 font-size: @font-size + .4rem;
